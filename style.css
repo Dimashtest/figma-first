@@ -11,12 +11,14 @@
 }
 
 header {
-    width: 1440px;
+    width: 100%;
     height: 96px;
+    background-color: white;
     padding: 0 64px; /* отступ */
     display: flex;
     justify-content: space-between; /* равномерное выравнивание по горизонтали*/
     align-items: center; /* выравнивание по ветикали */
+    position: fixed;
 }
 
 nav>ul{
@@ -27,6 +29,24 @@ nav>ul{
 
 nav>ul>li {
     color: #230B59;
+}
+.for__borrow {
+    position: relative;
+}
+.for__borrow>div {
+    font-size: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 12px;
+    height: 12px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    position: absolute;
 }
 
 
@@ -42,7 +62,7 @@ nav>ul>li {
     align-self: center;
     gap: 12px;
 }
-
+/* 
 .buttons__header>button:first-child{
     color: #4840BB;
 }
@@ -50,14 +70,22 @@ nav>ul>li {
 .buttons__header>button:last-child{
     background: #4840BB;
     color: white;
+} */
+.buttons__header>button:hover {
+    background-color:#230B59;
+    color: white;
+    transition: all 1s ease;
+    cursor: pointer;
 }
-
+.buttons__header>button {
+    transition: all 1s ease;
+}
 .banner {
     display: flex;
     gap: 48px;
     align-items: center;
-    padding: 0 64px;
-    width: 1440px;
+    padding: 190px 0 0 64px;
+    width: 100%;
     height: 559px;
 }
 .banner__text {
@@ -93,6 +121,7 @@ nav>ul>li {
 }
 
 .under__banner {
+    padding: 200px 0 0 64px;
     display: flex;
     width: 1440px;
     height: 135px;
@@ -136,7 +165,7 @@ nav>ul>li {
 }
 
 .block3 {
-    padding: 0 80px;
+    padding: 100px 0 0 80px;
     width: 1280px;
     height: 750px;
 }
@@ -193,7 +222,6 @@ nav>ul>li {
     line-height: 21.6px;
     color: white;    
     border: 2px solid #4840BB;
-    
     border-radius: 6px;
     width: 145px;
     height: 45px;
